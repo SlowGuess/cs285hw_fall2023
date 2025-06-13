@@ -1,4 +1,4 @@
-from cs285.infrastructure.utils import *
+from hw1.cs285.infrastructure.utils import *
 
 
 class ReplayBuffer(object):
@@ -59,4 +59,5 @@ class ReplayBuffer(object):
             self.terminals = np.concatenate(
                 [self.terminals, terminals]
             )[-self.max_size:]
+
 
